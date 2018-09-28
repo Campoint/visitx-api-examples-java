@@ -25,30 +25,6 @@ public class FetchSenders {
         CloseableHttpClient client = HttpClients.createDefault();
 
         Collection<Sender> senders = fetchSenders(client);
-
-
-        // URL url = new URL("https://meta.visit-x.net/VXREST.svc/json/senders");
-
-        // HttpURLConnection con = (HttpURLConnection) url.openConnection();
-        // con.setRequestMethod("GET");
-        // con.setDoOutput(true);
-        // DataOutputStream out = new DataOutputStream(con.getOutputStream());
-        // out.writeBytes("" + accessKey);
-        // out.flush();
-        // out.close();
-
-        // BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
-        // String inputLine;
-        // StringBuffer content = new StringBuffer();
-
-        // while ((inputLine = in.readLine()) != null) {
-        //     content.append(inputLine);
-        // }
-        // in.close();
-        // con.disconnect();
-
-        // System.out.print(content.toString());
-        // System.in.read();
     }
 
     private static Collection<Sender> fetchSenders(CloseableHttpClient client) throws URISyntaxException, IOException {
