@@ -1,1 +1,1 @@
-# JAVA examples for the VisitX API
+# JAVA examples for the Visit-X API
