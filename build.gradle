@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'net.campoint.visitx.api'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.9
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation "io.reactivex.rxjava2:rxjava:2.2.2"
+
+    compile group: 'org.eclipse.jetty.websocket', name: 'websocket-client', version: '9.4.12.v20180830'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
